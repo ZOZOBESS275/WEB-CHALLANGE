@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challange 4 - Copy to a clipboard</title>
+</head>
+<body>
+    <h2 id="title">
+        Copy to clipboard-Javascript
+    </h2>
+    <input id="MyInp" type="text">
+    <button id="btnCopy">
+        Copy
+    </button>
+    
+    
+</body>
+<script type="text/javascript">
+    var MyInp = document.getElementById("MyInp");
+    const btnCopy = document.getElementById("btnCopy");
+
+    btnCopy.onclick = function(){
+
+        MyInp.select();
+        
+        document.execCommand("Copy");
+    };
+
+</script>
+</html> 
